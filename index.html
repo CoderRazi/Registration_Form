@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family:;
+        margin: 40px 30px;
+        border-radius: 4px;
+        font-size: 17px;
+        padding: 8px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px 20px;
+        border: 2px solid black;
+    }
+    .You{
+        font-weight: 20px;
+        background-color:aliceblue;
+        padding: 5px 20px 15px 20px;
+        border-radius: 4px;
+        text-align: center;
+        margin: 0px 0px 5px 5px;
+    }
+    input[type="text"],
+    input[type="Email"],
+    input[type="number"],
+    input[type="Password"],
+    input[type="date"],select{
+    width: 20%;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    }
+    input[type=submit]{
+        color: white;
+        background-color:rgb(78, 164, 78);
+        padding: 12px 20px;
+        margin: 2px;
+        border: none;
+        border-radius: 5px;
+    }
+    input[type=submit]:hover{
+        color:rgb(222, 42, 72);
+        background-color: black;
+    } 
+</style>
+<body>
+    <div class="You">
+    <h1>Registration Form</h1>
+    <hr>
+    <h2>About me</h2>
+    <form action="">
+        <p><input type="text" name="First Name" placeholder="First Name" required></p>
+        <p><input type="text" name="Last Name"  placeholder="Last Name"  required ></p>
+        <p> Male <input type="radio" name="Gender" id="male" required>
+            Female <input type="radio" name="Gender" id="female" required></p>
+        <p>
+        <input type="Date" name="Date" id="Date">
+        </p>
+        <p><input type="email" name="email"placeholder="Email" required></p>
+        <h2>School Details</h2>
+        <p><input type="text" name="School Name" placeholder="School Name" required></p>
+        <p>
+           <select name="School Type" id="School Type">
+           <option value="---Select Your school Type---">---Select Your school Type---</option>
+            <option value="Private">Private</option>
+            <option value="Government Aided">Government Aided</option> required
+           </select>
+        </p>
+        <p>
+          <input type="text" name="School_city" placeholder="School city" required >
+        </p>
+        <h2>Junior College Details</h2>
+        <p><input type="text" name="Junior College Name" placeholder="Junior College Name" required></p>
+        <p> 
+             <select name="college Type" id="college Type">
+                <option value="---Select Your college Type---">---Select Your college Type---</option>
+                <option value="Private">Private</option>
+                <option value="Government Aided">Government Aided</option> required
+             </select> 
+      </p>
+    <p>
+   <input type="text" name="Junior College City" placeholder="Junior College City" required>
+   </p>
+   <h2>Graduated Details</h2>
+   <p><input type="text" name="Senior College name"  placeholder="Senior college name" required></p>
+   <p>
+    <select name="Qualification" id="Qualification">
+        <option value="Select your Pursuing Qualification">Select your Pursuing Qualification</option>
+        <option value=" Bachleor of Engineering">Bachleor of Engineering</option></option>
+        <option value=" Bachleor in Computer science">Bachleor in Computer science</option>
+        <option value= "Bachleor of Technology">Bachleor of Technology</option>
+        <option value=" Master in Computer science">Master in Computer science</option> required
+    </select>
+  </p>  
+   <p>
+    <select name="Batch name to enroll" id="Batch name to enroll">
+        <option value="Batch name to enroll">Batch name to enroll</option>
+        <option value="Alpha">Alpha</option>
+        <option value="Alpha 2.0">Alpha 2.0</option>
+        <option value="Beta">Beta</option>
+        <option value="Delta">Delta</option> required                
+    </select>
+   </p>
+   <p>
+    <input type="Submit" value="Submit"> 
+   </p>
+   </form>
+</div>
+</body>
+</html>
